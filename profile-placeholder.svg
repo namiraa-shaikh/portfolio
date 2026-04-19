@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-label="Profile placeholder">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#57c8ff"/>
+      <stop offset="100%" stop-color="#7df0c4"/>
+    </linearGradient>
+    <radialGradient id="g2" cx="20%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="#10192b"/>
+  <circle cx="650" cy="180" r="220" fill="url(#g1)" opacity="0.35"/>
+  <circle cx="130" cy="860" r="280" fill="url(#g1)" opacity="0.18"/>
+  <path d="M180 760c0-110 80-190 220-190s220 80 220 190v180H180z" fill="url(#g1)" opacity="0.85"/>
+  <circle cx="400" cy="390" r="150" fill="url(#g1)"/>
+  <rect width="800" height="1000" fill="url(#g2)"/>
+</svg>

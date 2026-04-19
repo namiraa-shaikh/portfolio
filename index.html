@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Namiraa Shaikh portfolio - creative developer and designer crafting premium digital experiences."
+    />
+    <title>Namiraa Shaikh | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid"></div>
+    <div class="noise"></div>
+    <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+    <div class="cursor cursor-dot"></div>
+    <div class="cursor cursor-ring"></div>
+
+    <header class="site-header glass reveal">
+      <nav class="site-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Software Development Student</p>
+          <h1>
+            Namiraa Shaikh
+            <span>Building practical digital solutions with creative precision.</span>
+          </h1>
+          <p class="hero-copy">
+            Software development student at TISS, Mumbai, working across web
+            development, content systems, automation, and digital growth.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects" data-cursor-text="Open">View Work</a>
+            <a class="btn btn-ghost" href="#contact" data-cursor-text="Talk">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-parallax="0.2">
+          <div class="portrait-card glass">
+            <img
+              src="assets/hero-photo.jpg"
+              alt="Portrait of Namiraa Shaikh"
+              loading="eager"
+            />
+          </div>
+          <div class="floating-tag">Mumbai Based • Open to Internships</div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Curious, adaptable, and focused on real-world execution.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-text glass reveal">
+            <p>
+              I am a hands-on software development student at Tata Institute of
+              Social Sciences (TISS), Mumbai, with a strong interest in building
+              practical digital products that solve real user and business needs.
+            </p>
+            <p>
+              My approach is deeply experiential: I experiment, build, break,
+              refine, and improve. Through internships in startups and digital
+              teams, I have developed a balance of technical execution,
+              communication, and creative problem-solving.
+            </p>
+            <div class="chips">
+              <span>Learning Agility</span>
+              <span>Tech + Design + Content</span>
+              <span>Hands-On Execution</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Academics and Personal Projects.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal tilt" data-case="Dummy website for a business coaching agency built in Wix." data-cursor-text="Open">
+            <div class="project-visual">
+              <img src="assets/dummy-website-business-coaching-agency.png" alt="Dummy Website for Business Coaching Agency screenshot" loading="lazy" />
+            </div>
+            <div class="project-meta">
+              <h3>Dummy Website for Business Coaching Agency</h3>
+              <p class="project-date">Jul 2025 - Aug 2025</p>
+              <p>Dummy website for a business coaching agency using Wix Editor.</p>
+              <a class="project-link" href="https://namiraashaikh13.wixsite.com/my-site-1/home" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal tilt" data-case="Dummy homepage concept for a marketing agency using Wix." data-cursor-text="Open">
+            <div class="project-visual">
+              <img src="assets/dummy-home-page-marketing-agency-wix.png" alt="Dummy Home Page for Marketing Agency using Wix screenshot" loading="lazy" />
+            </div>
+            <div class="project-meta">
+              <h3>Dummy Home Page for Marketing Agency using Wix</h3>
+              <p class="project-date">Jul 2025 - Jul 2025</p>
+              <p>Dummy home page for a marketing agency using Wix.</p>
+              <a class="project-link" href="https://namiraashaikh13.wixsite.com/madquickagency" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal tilt" data-case="Freelance services website designed and deployed on GitHub Pages." data-cursor-text="Open">
+            <div class="project-visual">
+              <img src="assets/freelance-services-website.png" alt="Freelance Services Website screenshot" loading="lazy" />
+            </div>
+            <div class="project-meta">
+              <h3>Freelance Services Website</h3>
+              <p class="project-date">Jun 2025 - Jun 2025</p>
+              <p>Freelance services website with a clean service-first presentation.</p>
+              <a class="project-link" href="https://namiraashaikh.github.io/craftysyde/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal tilt" data-case="E-commerce storefront concept with product-oriented browsing flow." data-cursor-text="Open">
+            <div class="project-visual">
+              <img src="assets/e-commerce-site.png" alt="E Commerce Site screenshot" loading="lazy" />
+            </div>
+            <div class="project-meta">
+              <h3>E Commerce Site</h3>
+              <p class="project-date">Mar 2025 - May 2025</p>
+              <p>E-commerce website project with storefront-focused layout and flow.</p>
+              <a class="project-link" href="https://namiraashaikh.github.io/UrbanThreads/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal tilt" data-case="Landing page for a financial tracker SaaS product concept." data-cursor-text="Open">
+            <div class="project-visual">
+              <img src="assets/landing-page-saas-product.png" alt="Landing Page for SaaS Product screenshot" loading="lazy" />
+            </div>
+            <div class="project-meta">
+              <h3>Landing Page for SaaS Product</h3>
+              <p class="project-date">Apr 2025 - Apr 2025</p>
+              <p>Landing page for a financial tracker with clear conversion-focused sections.</p>
+              <a class="project-link" href="https://namiraashaikh.github.io/FinZo/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal tilt" data-case="Ongoing Canva design collection featuring various visual styles." data-cursor-text="Open">
+            <div class="project-visual">
+              <img src="assets/canva-designs.png" alt="Canva Designs screenshot" loading="lazy" />
+            </div>
+            <div class="project-meta">
+              <h3>Canva Designs</h3>
+              <p class="project-date">Jan 2025 - Present</p>
+              <p>Ongoing design collection showcasing visual exploration and creative outputs.</p>
+              <a class="project-link" href="https://drive.google.com/drive/folders/18LfZt9yb9wFl4prIj-80DJfvvRu0XpTT?usp=sharing" target="_blank" rel="noopener noreferrer">View Collection</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Multi-domain experience across web, content, and growth.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-year">Nov 2025 - Feb 2026</span>
+            <div>
+              <h3>Content & Software Enthusiast</h3>
+              <p>Digital Upgrowth, Mumbai</p>
+              <p>
+                Working across content, software-related initiatives, and
+                automation-focused workflows while supporting client-facing
+                projects with technical and communication inputs.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">Aug 2025 - Oct 2025</span>
+            <div>
+              <h3>Web Development Intern (Wix)</h3>
+              <p>MadQuick Pvt. Ltd., Sagar MP</p>
+              <p>
+                Built and customized websites based on client requirements,
+                gained practical exposure to feedback handling, and iterated
+                quickly through revisions.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">Jul 2025 - Aug 2025</span>
+            <div>
+              <h3>Development Intern</h3>
+              <p>Clever Studio, Mumbai</p>
+              <p>
+                Designed creatives for digital platforms using Canva, translated
+                briefs into audience-friendly visuals, and supported brand and
+                social media content requirements.
+              </p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-year">Dec 2024 - Aug 2025</span>
+            <div>
+              <h3>Development Intern</h3>
+              <p>366 DigitX CSMT, Mumbai</p>
+              <p>
+                Managed Shopify product data including descriptions, pricing,
+                tags, and images while strengthening backend setup and
+                e-commerce workflow understanding.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">Education</p>
+          <h2>Academic foundation with consistent practical application.</h2>
+        </div>
+        <div class="education-grid">
+          <article class="edu-card glass reveal">
+            <h3>Bachelor's in Software Development</h3>
+            <p>Tata Institute of Social Sciences (TISS), Mumbai</p>
+            <span>2024 - 2027</span>
+          </article>
+          <article class="edu-card glass reveal">
+            <h3>Higher Secondary Education (HSC)</h3>
+            <p>Jai Hind College, Churchgate • 70.83%</p>
+            <span>2022 - 2024</span>
+          </article>
+          <article class="edu-card glass reveal">
+            <h3>Indian Certificate of Secondary Education</h3>
+            <p>St. Anne's High School, Fort • 80.00%</p>
+            <span>2010 - 2022</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical, creative, and automation capabilities.</h2>
+        </div>
+        <div class="skills-marquee reveal" aria-label="Skills marquee">
+          <p class="skills-category">Web Development & Tools</p>
+          <div class="marquee-row">
+            <div class="marquee-track">
+              <span class="marquee-chip">HTML</span>
+              <span class="marquee-chip">CSS</span>
+              <span class="marquee-chip">JavaScript</span>
+              <span class="marquee-chip">Bootstrap</span>
+              <span class="marquee-chip">Web development</span>
+              <span class="marquee-chip">Web Design</span>
+              <span class="marquee-chip">MySQL</span>
+              <span class="marquee-chip">Wix</span>
+              <span class="marquee-chip">WordPress</span>
+              <span class="marquee-chip">Shopify</span>
+              <span class="marquee-chip">Adobe Dreamweaver</span>
+            </div>
+          </div>
+          <p class="skills-category">Creative, Writing & Marketing</p>
+          <div class="marquee-row reverse">
+            <div class="marquee-track">
+              <span class="marquee-chip">Canva</span>
+              <span class="marquee-chip">Content Writing</span>
+              <span class="marquee-chip">Creative Writing</span>
+              <span class="marquee-chip">Social Media Marketing</span>
+              <span class="marquee-chip">Email Marketing</span>
+              <span class="marquee-chip">Creative Thinking</span>
+              <span class="marquee-chip">Problem Solving</span>
+              <span class="marquee-chip">Self-learning</span>
+              <span class="marquee-chip">Automation</span>
+              <span class="marquee-chip">n8n</span>
+              <span class="marquee-chip">make.io</span>
+              <span class="marquee-chip">MS-Office</span>
+              <span class="marquee-chip">MS-Word</span>
+              <span class="marquee-chip">MS-Excel</span>
+              <span class="marquee-chip">MS-PowerPoint</span>
+            </div>
+          </div>
+          <p class="skills-category">Communication, Languages & Collaboration</p>
+          <div class="marquee-row">
+            <div class="marquee-track">
+              <span class="marquee-chip">English Proficiency (Spoken)</span>
+              <span class="marquee-chip">English Proficiency (Written)</span>
+              <span class="marquee-chip">Hindi Proficiency (Spoken)</span>
+              <span class="marquee-chip">Hindi Proficiency (Written)</span>
+              <span class="marquee-chip">Web Design</span>
+              <span class="marquee-chip">Interpersonal skills</span>
+              <span class="marquee-chip">Collaboration</span>
+              <span class="marquee-chip">Teamwork</span>
+              <span class="marquee-chip">Client Relationship</span>
+              <span class="marquee-chip">Adaptability</span>
+              <span class="marquee-chip">Time Management</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Open to internships, collaborations, and client projects.</h2>
+        </div>
+        <div class="contact-grid">
+          <aside class="contact-aside reveal glass">
+            <p>Let's connect through whichever channel is easiest for you.</p>
+            <p>Email: <a href="mailto:namiraashaikh13@gmail.com">namiraashaikh13@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/918356054395" target="_blank" rel="noopener noreferrer">+91 8356054395</a></p>
+            <p>Location: Mumbai, India</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/namiraashaikh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-cursor-text="Open">LinkedIn</a>
+              <a href="mailto:namiraashaikh13@gmail.com" aria-label="Email" data-cursor-text="Open">Email</a>
+              <a href="https://wa.me/918356054395" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" data-cursor-text="Open">WhatsApp</a>
+            </div>
+            <a class="btn btn-ghost resume-download" href="NamiraaShaikh_Resume%20(1).pdf" download data-cursor-text="Download">Download Resume</a>
+          </aside>
+
+          <div class="contact-graphic reveal glass" aria-hidden="true">
+            <div class="contact-gridlines"></div>
+            <div class="contact-center">Reach Out</div>
+            <div class="contact-pill pill-email">Email</div>
+            <div class="contact-pill pill-whatsapp">WhatsApp</div>
+            <div class="contact-pill pill-linkedin">LinkedIn</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Namiraa Shaikh. Got an idea? Let's make it real.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
