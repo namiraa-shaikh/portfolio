@@ -6,9 +6,8 @@ Static portfolio website with modular front-end architecture.
 
 ```
 portfolio/
-	html/
-		index.html
-	Css/
+	index.html
+	css/
 		styles.css
 	js/
 		main.js                  # application bootstrap
@@ -18,7 +17,7 @@ portfolio/
 			theme.js               # theme initialization and toggle behavior
 			effects.js             # animations, cursor, marquee, nav, particles
 	image/
-	script.js                  # legacy monolithic script (kept for reference)
+	Document/
 	vercel.json                # deployment config for Vercel
 ```
 
@@ -41,11 +40,11 @@ Option 2: Python
 python -m http.server 5500
 ```
 
-Then open `http://localhost:5500/html/`.
+Then open `http://localhost:5500/`.
 
 ## Deploy On Vercel
 
-This project is configured for static hosting. `vercel.json` rewrites `/` to `html/index.html`.
+This project is configured for static hosting. `index.html` lives at the repository root and `vercel.json` only keeps clean URL handling.
 
 ### Option 1: Vercel Dashboard
 
